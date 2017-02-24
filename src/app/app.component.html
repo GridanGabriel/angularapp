@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+<nav>
+  <ul class="nav nav-pills">
+    <li role="presentation" class="active"><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+    <li role="presentation"><a routerLink="/heroes" routerLinkActive="active">Heroes</a></li>
+    <li role="presentation"><a routerLink="/buildings" routerLinkActive="active">Buildings</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+
+<ul class="nav nav-pills nav-stacked">
+  <li>a</li>
+  <li>a</li>
+  <li>a</li>
+  <li>a</li>
+  <li>a</li>
+</ul>

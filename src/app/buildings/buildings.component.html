@@ -1,0 +1,29 @@
+<h1>Buildings:</h1>
+<ul>
+  <li *ngFor="let building of buildings">
+    <div class="card" style="width: 20rem;">
+      <div class="card-block">
+        <nav>
+          <a routerLink="/building/{{building.pk}}" routerLinkActive="active">
+            <h2>{{building.title}}</h2>
+          </a>
+        </nav>
+        <router-outlet></router-outlet>
+      </div>
+      <img class="card-img-top" src="../../assets/asd2.jpg" alt="Example text">
+      <div class="card-block">
+        <div class="center">
+          <h5 align="center"><span class="badge badge-pill badge-primary">Temperature</span><br> {{building.avg_temp}}
+            °C</h5>
+          <h5 align="center"><span class="badge badge-pill badge-primary">Humidity</span><br> {{building.avg_humid}} %
+          </h5>
+          <h5 align="center"><span class="badge badge-pill badge-primary">Comfort</span><br> {{building.conf_level}} %
+          </h5>
+          <h5 align="center"><span class="badge badge-pill badge-primary">Occupancy</span><br>
+            {{building.occupancy_level}} %</h5>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
